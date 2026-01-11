@@ -1,12 +1,35 @@
 import { NavLink } from 'react-router-dom';
+import {
+  makeStyles,
+  NavDrawer,
+  NavDrawerBody,
+  NavItem,
+} from '@fluentui/react-components';
+import { ArrowRedo16Regular, ArrowRight20Filled, ArrowRight20Regular, Board20Color, Board20Filled, Board20Regular, BoardGames20Filled, bundleIcon, Home24Regular, Settings24Regular } from '@fluentui/react-icons';
+const useStyles = makeStyles({
+  sidebar: {
+    width: '240px',
+    borderRight: '1px solid #e1e1e1',
+  },
+})
+// const Dashboard = bundleIcon(Board20Filled, Board20Regular);
 
 export default function Sidebar() {
+  const styles = useStyles();
   return (
-    <aside className="app-sidebar">
-      <nav>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/dashboard">Dashboard</NavLink>
-      </nav>
-    </aside>
+    <NavDrawer open type="inline" className={styles.sidebar}>
+      <NavDrawerBody>
+
+        <NavLink to="/" ><Home24Regular />Home</NavLink>
+        <NavLink to="/dashboard" ><Board20Regular />Dashboard</NavLink>
+        <NavLink to="/settings" ><Board20Filled /><Board20Regular />Settings
+          <ArrowRight20Regular />
+          <ArrowRight20Filled />
+        </NavLink>
+
+
+
+      </NavDrawerBody>
+    </NavDrawer>
   );
 }

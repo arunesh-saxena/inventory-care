@@ -5,7 +5,7 @@ import './styles/main.scss';
 
 const App = () => {
   return (
-    <AppRoutes />
+      <AppRoutes />
   );
 };
 
