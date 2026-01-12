@@ -29,9 +29,11 @@ npm run preview
 ```
 
 ## build and test local
+
 ```
 npm run build && npx serve dist
 ```
+
 ## Learn more
 
 To learn more about Rsbuild, check out the following resources:

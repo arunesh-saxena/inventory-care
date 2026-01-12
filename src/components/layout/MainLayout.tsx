@@ -26,7 +26,11 @@ const useStyles = makeStyles({
 const MainLayout: React.FC = () => {
   const styles = useStyles();
   return (
-    <div className={styles.root} role="region" aria-label="Main application layout">
+    <div
+      className={styles.root}
+      role="region"
+      aria-label="Main application layout"
+    >
       <Header />
 
       <div className={styles.body}>

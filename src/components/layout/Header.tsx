@@ -34,7 +34,9 @@ const Header: React.FC = () => {
   return (
     <header className={styles.header}>
       <div className={styles.flex}>
-        <Text weight="bold" className={styles.flexLeft}>Inventory Care</Text>
+        <Text weight="bold" className={styles.flexLeft}>
+          Inventory Care
+        </Text>
         <nav className={styles.flexRight}>
           <NavLink to="/">Home</NavLink>
           <NavLink to="/aboutUs">About Us</NavLink>
