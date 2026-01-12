@@ -14,6 +14,7 @@ const useStyles = makeStyles({
 
 const Footer: React.FC = () => {
     const styles = useStyles();
+
     return (
         <footer className={`app-footer ${styles.footer}`}>
             <div className="container">

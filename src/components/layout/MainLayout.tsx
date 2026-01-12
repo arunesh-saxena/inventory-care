@@ -25,6 +25,7 @@ const useStyles = makeStyles({
 });
 const MainLayout: React.FC = () => {
     const styles = useStyles();
+
     return (
         <div
             className={styles.root}

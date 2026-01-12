@@ -4,7 +4,6 @@ interface CounterState {
     value: number;
     status: 'idle' | 'loading' | 'succeeded' | 'failed';
 }
-
 const initialState: CounterState = {
     value: 0,
     status: 'idle',
@@ -15,6 +14,7 @@ export const fetchCount = createAsyncThunk<number, number>(
         const response = await new Promise<{ data: number }>((resolve) => {
             setTimeout(() => resolve({ data: amount }), 500);
         });
+
         return response.data;
     }
 );
@@ -48,5 +48,4 @@ const counterSlice = createSlice({
 });
 
 export const { increment, decrement, incrementByAmount } = counterSlice.actions;
-
 export default counterSlice.reducer;

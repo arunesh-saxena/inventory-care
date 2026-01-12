@@ -21,6 +21,7 @@ const useStyles = makeStyles({
 
 export default function Sidebar() {
     const styles = useStyles();
+
     return (
         <NavDrawer open type="inline" className={styles.sidebar}>
             <NavDrawerBody>

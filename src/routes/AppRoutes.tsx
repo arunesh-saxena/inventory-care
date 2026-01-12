@@ -5,6 +5,7 @@ import About from '@/pages/AboutUs/AboutUs';
 import Settings from '@/pages/Settings/Settings';
 
 const Home = lazy(() => import('@/pages/Home/Home'));
+
 const Dashboard = lazy(() => import('@/pages/Dashboard/Dashboard'));
 
 export default function AppRoutes() {

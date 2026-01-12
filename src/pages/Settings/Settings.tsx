@@ -31,6 +31,7 @@ export default function Settings(): JSX.Element {
     useEffect(() => {
         try {
             const raw = localStorage.getItem(STORAGE_KEY);
+
             if (raw) {
                 setValues((prev) => ({
                     ...prev,
@@ -44,6 +45,7 @@ export default function Settings(): JSX.Element {
 
     function validate(v: SettingsState) {
         const e: typeof errors = {};
+
         if (!v.username.trim()) e.username = 'Username is required';
         // simple email check
         if (v.email && !/^\S+@\S+\.\S+$/.test(v.email))
@@ -58,6 +60,7 @@ export default function Settings(): JSX.Element {
     ) {
         setValues((prev) => {
             const next = { ...prev, [key]: value };
+
             // clear previous status when user edits
             setStatus(null);
             // immediate validation for username/email

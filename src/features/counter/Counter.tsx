@@ -30,11 +30,13 @@ export default function Counter({
 
     const incrementClick = () => {
         const next = Math.min(max, count + step);
+
         setAndNotify(next);
     };
 
     const decrementClick = () => {
         const next = Math.max(min, count - step);
+
         setAndNotify(next);
     };
 

@@ -34,6 +34,7 @@ const useStyles = makeStyles({
 const Header: React.FC = () => {
     const styles = useStyles();
     const value = useSelector((state: RootState) => state.counter.value);
+
     return (
         <header className={styles.header}>
             <div className={styles.flex}>
