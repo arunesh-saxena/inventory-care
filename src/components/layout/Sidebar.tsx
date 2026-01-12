@@ -3,9 +3,9 @@ import {
   makeStyles,
   NavDrawer,
   NavDrawerBody,
-  NavItem,
+  
 } from '@fluentui/react-components';
-import { ArrowRedo16Regular, ArrowRight20Filled, ArrowRight20Regular, Board20Color, Board20Filled, Board20Regular, BoardGames20Filled, bundleIcon, Home24Regular, Settings24Regular } from '@fluentui/react-icons';
+import {  ArrowRight20Filled, ArrowRight20Regular, Board20Filled, Board20Regular,   Home24Regular,  } from '@fluentui/react-icons';
 const useStyles = makeStyles({
   sidebar: {
     width: '240px',

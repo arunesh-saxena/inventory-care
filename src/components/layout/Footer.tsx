@@ -1,5 +1,5 @@
 import React from 'react'; 
-import { makeStyles, Text } from '@fluentui/react-components';
+import { makeStyles } from '@fluentui/react-components';
 
 const useStyles = makeStyles({
   footer: {
