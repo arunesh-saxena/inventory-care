@@ -1,5 +1,7 @@
+import type { RootState } from '@/app/store';
 import { makeStyles, Text } from '@fluentui/react-components';
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 const useStyles = makeStyles({
   header: {
@@ -31,6 +33,7 @@ const useStyles = makeStyles({
 });
 const Header: React.FC = () => {
   const styles = useStyles();
+  const value = useSelector((state: RootState) => state.counter.value);
   return (
     <header className={styles.header}>
       <div className={styles.flex}>
@@ -38,6 +41,7 @@ const Header: React.FC = () => {
           Inventory Care
         </Text>
         <nav className={styles.flexRight}>
+          <Text>Redux counter; {value}</Text>
           <NavLink to="/">Home</NavLink>
           <NavLink to="/aboutUs">About Us</NavLink>
         </nav>
