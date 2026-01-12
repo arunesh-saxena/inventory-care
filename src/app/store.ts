@@ -3,10 +3,10 @@ import authReducer from '@/features/auth/authSlice';
 import counterReducer from '@/features/counter/counterSlice';
 
 export const store = configureStore({
-  reducer: {
-    auth: authReducer,
-    counter: counterReducer,
-  },
+    reducer: {
+        auth: authReducer,
+        counter: counterReducer,
+    },
 });
 
 export type RootState = ReturnType<typeof store.getState>;

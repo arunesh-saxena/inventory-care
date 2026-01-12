@@ -4,23 +4,23 @@ import { pluginSass } from '@rsbuild/plugin-sass';
 
 // Docs: https://rsbuild.rs/config/
 export default defineConfig({
-  plugins: [
-    pluginReact(),
-    pluginSass({
-      sassLoaderOptions: {
-        sourceMap: true,
-      },
-    }),
-  ],
-  html: {
-    template: './public/index.html',
-  },
-  output: {
-    assetPrefix: '/',
-  },
-  resolve: {
-    alias: {
-      '@': './src',
+    plugins: [
+        pluginReact(),
+        pluginSass({
+            sassLoaderOptions: {
+                sourceMap: true,
+            },
+        }),
+    ],
+    html: {
+        template: './public/index.html',
     },
-  },
+    output: {
+        assetPrefix: '/',
+    },
+    resolve: {
+        alias: {
+            '@': './src',
+        },
+    },
 });
