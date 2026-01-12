@@ -70,6 +70,21 @@ export default [
             /* General */
             'no-console': ['warn', { allow: ['warn', 'error'] }],
             'no-debugger': 'warn',
+
+            /* Enforce blank line between variable declarations */
+            "padding-line-between-statements": [
+              "error",
+
+                  // Blank line between variable declarations
+                  { blankLine: "always", prev: ["const", "let", "var"], next: ["const", "let", "var"] },
+                  // Blank line before function
+                  { blankLine: "always", prev: "*", next: "function" },
+                  // Blank line after function
+                  { blankLine: "always", prev: "function", next: "*" },
+                  // Blank line between variable declarations (const / let / var)
+                   { blankLine: "always", prev: ["const", "let", "var"], next: "*"},
+                   { blankLine: "any",    prev: ["const", "let", "var"], next: ["const", "let", "var"] }
+              ]
         },
     },
 
