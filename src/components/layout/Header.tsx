@@ -37,7 +37,7 @@ const Header: React.FC = () => {
         <Text weight="bold" className={styles.flexLeft}>Inventory Care</Text>
         <nav className={styles.flexRight}>
           <NavLink to="/">Home</NavLink>
-          <NavLink to="/about">About</NavLink>
+          <NavLink to="/aboutUs">About Us</NavLink>
         </nav>
       </div>
     </header>
