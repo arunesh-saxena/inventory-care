@@ -16,6 +16,9 @@ export default defineConfig({
         template: './public/index.html',
     },
     output: {
+        distPath: {
+            root: 'dist'
+        },
         assetPrefix: '/',
     },
     resolve: {
