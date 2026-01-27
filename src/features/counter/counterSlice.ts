@@ -8,6 +8,7 @@ const initialState: CounterState = {
     value: 0,
     status: 'idle',
 };
+
 export const fetchCount = createAsyncThunk<number, number>(
     'counter/fetchCount',
     async (amount = 1) => {
